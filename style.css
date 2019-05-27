@@ -4,3 +4,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
+.contact{
+	height: 50%;
+	background: #FF0000;
+}
