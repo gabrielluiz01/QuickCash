@@ -3,8 +3,93 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
 .contact{
-	height: 50%;
-	background: #FF0000;
+	height: 50vh;
+	display: flex;
+	flex-wrap: wrap;
+	background: rgb(225, 0, 0);
+	align-items: center;
+	justify-content: space-between;
+}
+@media(max-width: 768px){
+	.contact{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.contactCircle{
+	width: 30vw;
+	display: flex;
+	justify-content: center;
+}
+@media(max-width: 768px){
+	.contactCircle{
+		display: none;
+	}
+}
+.contactCircle__img{
+	width: 250px;
+	height: 250px;
+	margin: 0px 0px 0px 0px
+}
+.contactAddress__logo{
+	width: 230px;
+	height: 33px;
+	margin: 0px 0px 15px 0px
+}
+.contactAddress__address, .contactAddress__number, .contactAddress__email{
+	margin: 10px 0px;
+	font-size: 13px;
+	color: white;
+	font-weight: bolder;
+}
+.contactAddress__rights{
+	margin: 25px 0px 0px 0px;
+}
+.contactAddress__rightsQuick, .contactAddress__rightsVnw{
+	margin: 5px 0px;
+	font-size: 12px;
+}
+.contactAddress__rightsQuick{
+	opacity: 0.7;
+	margin: 0px 0px 10px 0px;
+}
+.contactAddress__rightsVnw{
+	margin: 12px 0px 0px 0px;
+}
+.contactAddress__addressIcon, .contactAddress__numberCell, .contactAddress__emailLetter{
+	width: 14px;
+	height: 14px;
+}
+.contactMenu{
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0px 80px 0px 0px;
+}
+.contactMenu__links{
+	height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactMenu__linksContent{
+	display: flex;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 10px 0px;
+	color: white;
+}
+.contactMenu__spheresImg{
+	width: 70px;
+	height: 70px;
+}
+@media(max-width: 768px){
+	.contactMenu__spheres{
+		display: none;
+	}
 }
