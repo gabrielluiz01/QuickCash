@@ -6,7 +6,7 @@
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 .contact{
-	height: 50vh;
+	min-height: 50vh;
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #EE3325;
@@ -15,7 +15,7 @@
 }
 @media(max-width: 768px){
 	.contact{
-		height: 90vh;
+		min-height: 90vh;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -131,9 +131,8 @@
 		font-weight: 600;
 	}
 }
-.contactMenu__spheresImg{
-	width: 70px;
-	height: 70px;
+.contactMenu__spheres{
+	margin-bottom: 10px;
 }
 @media(max-width: 768px){
 	.contactMenu__spheres{
