@@ -6,7 +6,7 @@
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 .contact{
-	min-height: 50vh;
+	height: 55vh;
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #EE3325;
@@ -15,7 +15,7 @@
 }
 @media(max-width: 768px){
 	.contact{
-		min-height: 90vh;
+		height: 65vh;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -108,21 +108,23 @@
 }
 .contactMenu__links{
 	height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	margin-top: 70%;
 }
 @media(max-width: 768px){
 	.contactMenu__links{
+		display: flex;
+		flex-direction: column;
 		align-items: center;
+		margin-top: 0;
 	}
 }
 .contactMenu__linksContent{
 	display: flex;
-	font-size: 10px;
+	font-size: 11px;
 	font-weight: bold;
-	margin: 10px 0px;
+	line-height: 36px;
 	color: white;
+	text-align: center;
 }
 @media(max-width: 768px){
 	.contactMenu__linksContent{
