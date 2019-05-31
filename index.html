@@ -37,7 +37,35 @@
 							<a href="#contact" class="menumobile__block--link contact">Contacts</a>
 			       	 	</div>
 			       	</div> 	
-				</nav>     
+				</nav> 
+							<!--=====|Fale Conosco|=====-->
+		<form class="faleConosco" action="#">
+		  <div class="faleConosco-titulo">
+		    <p class="faleConosco-titulo-titulo">Contact us</p>
+		    <p class="faleConosco-titulo-sair">_</p>
+		  </div>
+		  <div class="faleConosco-required">
+		    <label class="faleConosco-requiredTextoForm" for="name">Name</label>
+		    <input id="name" name="name" type="text" value=""/>
+		  </div>
+		  <div class="faleConosco-required">
+		    <label class="faleConosco-requiredTextoForm" for="email">Email</label>
+		    <input id="email" name="email" type="text" value=""/>
+		  </div>
+		  <div class="faleConosco-required">
+		    <label class="faleConosco-requiredTextoForm" for="message">How can we help</label>
+		    <textarea id="message" name="message" rows="7" cols="30"></textarea>
+		  </div>
+		  <div class="faleConosco-required buttons">
+		    <input class="cancel" type="submit" value="Cancel" />
+		    <input class="send" type="submit" value="Send" />  
+		  </div>
+		</form>
+			<div class="buttomContact">
+			  <img class="buttomContact-icon" src="assets/noun_support_1973675.svg" alt="">  
+			  <p>Contact</p>
+			</div>
+		<!--==========-->	    
 		</section>
 		<div class="header__Container--blocoImgfirst">
 		</div>
@@ -72,8 +100,55 @@
 					<p class="blockOur__block--paragraph">Solidarité - Écoute Responsabilité - Volonté Innovation - Réactivité</p>				
 				</div>
 			</div>
-			<div class="containerProducts__blockTransfer">
-				<div class="JS"></div>
+
+
+
+
+
+			<div class="simulate">
+				<div class="convert">
+					<div class="convert-block"> 
+						<div class="convert-blockFrom">
+							<p class="convert-blockForm-text">From:</p>
+							<span>
+								<img class="image" src=assets/globo.svg alt="country" name="BRL">
+								<select class="select" name="countryFrom" id="from">
+									<option value="BRL">Brazil</option>
+									<option value="USD">EUA</option>
+									<option value="EUR">Inglaterra</option>
+								</select>
+							</span>
+						</div>
+					<div class="convert-blockTo">
+						<p class="convert-blockForm-text">To:</p>
+						<span>
+							<img class="image" src=assets/globo.svg alt="country" name="EUA">
+							<select class="select" name="countryTo" id="to">
+								<option value="USD">EUA</option>
+								<option value="EUR">Inglaterra</option>
+								<option value="BRL">Brazil</option>
+							</select>
+						</span>
+					</div>
+				</div>
+				<div class="convert-values">
+					<div class="convert-valuesSend">
+						<p class="convert-valuesSend-text">Your send</p>
+						<input class="convert-valuesSend-input" type="text" id="coin">
+					</div>
+					<div class="convert-valueReceive">
+						<p class="convert-valuesSend-text">They receive</p>
+						<input class="convert-valuesSend-input" type="text" id="result">
+					</div>
+				</div>	
+			</div>
+
+
+
+
+
+
+
 				<div class="blockTransfer__block">
 					<h1 class="blockTransfer__block--title">Simulate your transfer</h1>
 					<p class="blockTransfer__block--paragraph">QuickCash is currently available in these countries:</p>
@@ -109,15 +184,31 @@
 					</div>
 				</div>
 			</div>
-			<div class="containerProducts__blockSlide">
-				<div class="slideJS"></div>
-				<h2 class="containerProducts__blockSlide--subtitle">Writing a new page in the history of money transfer along with you!</h2>	
-	        	<div class="circulos">
-			    	<div class="primeiroCirculo"></div>
-			    	<div class="segundoCirculo"></div>
-			    </div>	
-			</div>
+
+
+
+
+			<section class="history">
+				<div class="slide">
+					<div class="slide-block">
+						<label class="label" for="">
+							<img class="slide-block-arrow slide-block-arrow--margin" src="assets/seta.svg" alt="arrow">
+							<img class="slide-block-image" src="assets/depoimento1.png" alt="image remark">
+							<img class="slide-block-arrow" src="assets/seta2.svg" alt="arrow">				
+						</label>
+						<input class="slid-block-input" type="checkbox">
+					</div>
+				</div>
+				<p class="history-text">Writing a new page in the history of money transfer along with you!</p>
+				<div class="ballbig">
+				</div>
+				<div class="ballsmall"></div>
+			</section>
 		</section>
+
+
+
+
 		<section class="containerAgency">
 			<div class="blockImagesub">
 				<img class="containerAgency--image" 
@@ -276,6 +367,6 @@
 		<p class="block__desenv--paragraph">Copyright&copy;2019 Funperj - All Rights Reserved Developed by Vai na Web</p>
 	</div>
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
