@@ -19,6 +19,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding:15px 0px;
 	}
 }
 @media(max-width: 768px){
@@ -30,11 +31,11 @@
 	}
 }
 .contactCircle{
-	width: 30vw;
+	width: 25vw;
 	height: 45vh;
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	justify-content: flex-end;
+	align-items: center;
 }
 @media(max-width: 768px){
 	.contactCircle{
@@ -107,8 +108,8 @@
 	}
 }
 .contactMenu__links{
-	height: 50vh;
-	margin-top: 70%;
+	height: 40vh;
+	margin-top: 40%;
 }
 @media(max-width: 768px){
 	.contactMenu__links{
