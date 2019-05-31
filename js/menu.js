@@ -1,0 +1,11 @@
+$(function(){
+	$('.mobileButton').click(function(){
+		$('.menumobile__block').css('display','block');
+	});
+	$('.buttonexit').click(function(){
+		$('.menumobile__block').css('display','none');
+	});
+	$('.contact').click(function(){
+		$('.menumobile__block').css('display','none');
+	});
+});

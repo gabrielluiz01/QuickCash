@@ -5,9 +5,41 @@
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600|Montserrat:500,600,700|Muli:300" rel="stylesheet">
-	<title>About</title>
+	<link rel="shortcut icon" href="assets/logoaba.png">
+	<meta name="author" content="Gabriel Luiz">	
+	<title>QuickCash - About</title>
 </head>
 <body>
+	<header>
+		<section class="header__Container">
+			<img class="header__container--Logo" src="assets/logo.png">
+
+			<!-- ==== Menu-Desktop ==== -->
+
+			<nav class="header__container--BlocoMenu">
+				<a href="about.html" target="__blank" class="header__container--blocomenuLink">About us</a>
+				<a href="products.html" target="__blank" class="header__container--blocomenuLink">Our Products</a>
+				<a href="#contact" class="header__container--blocomenuLink">Contacts</a>
+				<a class="header__conatiner--Languagelink" href=""><span>EN</span>/FR</a>
+			</nav>
+
+				<!--=====|Mobile|=====-->
+				
+				<nav class="blockmobileMenu">
+			    	<div class="mobileButton">MENU</div>
+			        <div class="menumobile__block">
+			        	<div class="blockbuttonexit">
+			        		<a href="" class="buttonExit">X</a>
+			        	</div>
+			        	<div class="menumobile__blockLink">	
+			            	<a href="about.html" class="menumobile__block--link">About us</a>
+							<a href="products.html" class="menumobile__block--link">Our Products</a>
+							<a href="#contact" class="menumobile__block--link contact">Contacts</a>
+			       	 	</div>
+			       	</div> 	
+				</nav>     
+		</section>
+	</header>		
 	<main>
 		<section class="containerAbout">
 			<h1 class="containerAbout__blockImages--title">About QuickCash</h1>
@@ -158,5 +190,49 @@
 			</div>					
 		</section>
 	</main>
+	<footer id="contact">
+		<div class="footer__blockImage">
+			<img class="footer__blockImage--image" 
+				src="assets/circulos-vermelhos.png">
+		</div>
+		<div class="footer__block">
+			<img class="footer__block--image" 
+				src="assets/logo-footer.png">
+			<div class="footer__blockAdress">
+				<span class="blockAdress__block">
+					<img class="blockAdress__block--image" 
+						src="assets/locationicon.svg">
+					<p class="blockAdress__block--paragraph">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
+				</span>
+				<span class="blockAdress__block">
+					<img class="blockAdress__block--image" 
+						src="assets/phoneicon.svg">
+					<p class="blockAdress__block--paragraph">Tel: (225) 20 32 25 35</p>					
+				</span>
+				<span class="blockAdress__block">
+					<img class="blockAdress__block--image" 
+						src="assets/emailicon.svg">
+					<p class="blockAdress__block--paragraph">Email: infos@quickcashci.com</p>					
+				</span>
+			</div>
+		</div>
+		<div class="footer__blockLinkImage">
+			<div class="blockLinkImage__block">
+				<a class="blockLinkImage__block--link" href="about.html" target="__blank">About us</a>
+				<a class="blockLinkImage__block--link" href="products.html" target="__blank">Our Products</a>
+				<a class="blockLinkImage__block--link" href="index.html">News</a>
+				<a class="blockLinkImage__block--link" href="#contact">Contact</a>
+			</div>
+			<div class="blockimagecircle">
+				<img class="blockimagecircle__block--image" 
+					src="assets/circulos-brancos.png">
+			</div>
+		</div>
+	</footer>
+	<div class="block__desenv">
+		<p class="block__desenv--paragraph">Copyright&copy;2019 Funperj - All Rights Reserved Developed by Vai na Web</p>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>	
 </body>
 </html>

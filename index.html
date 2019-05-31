@@ -5,196 +5,277 @@
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600|Montserrat:500,600,700|Muli:300" rel="stylesheet">
+	<link rel="shortcut icon" href="assets/logoaba.png">
+	<meta name="author" content="Gabriel Luiz">
 	<title>QuickCash</title>
 </head>
 <body>
-	<section class="containerProducts">
-		<h1 class="containerProducts--title">Our Products</h1>
-		<div class="containerProducts__blockOur">
-			<div class="blockOur__block">
-				<h2 class="blockOur__block--subtitle">Cash to Cash</h2>
-				<img class="blockOur__block--image" 
-					src="assets/cash.png">
-				<p class="blockOur__block--paragraph">Transfer of money from one individual to another</p>	
-			</div>
-			<div class="blockOur__block">
-				<h2 class="blockOur__block--subtitle">Cash to Card</h2>
-				<img class="blockOur__block--image" 
-					src="assets/card.png">
-				<p class="blockOur__block--paragraph">Transfer of money from an individual onto a card</p>				
-			</div>
-			<div class="blockOur__block">
-				<h2 class="blockOur__block--subtitle">Cash to Account</h2>
-				<img class="blockOur__block--image" 
-					src="assets/account.png">
-				<p class="blockOur__block--paragraph">Transfer of money from an individual to a bank account</p>				
-			</div>
-			<div class="blockOur__block">
-				<h2 class="blockOur__block--subtitle">Nos Valeurs</h2>
-				<img class="blockOur__block--image" 
-					src="assets/valeurs.png">
-				<p class="blockOur__block--paragraph">Solidarité - Écoute Responsabilité - Volonté Innovation - Réactivité</p>				
-			</div>
+	<header>
+		<section class="header__Container">
+			<img class="header__container--Logo" src="assets/logo.png">
+
+			<!-- ==== Menu-Desktop ==== -->
+
+			<nav class="header__container--BlocoMenu">
+				<a href="about.html" target="__blank" class="header__container--blocomenuLink">About us</a>
+				<a href="products.html" target="__blank" class="header__container--blocomenuLink">Our Products</a>
+				<a href="#contact" class="header__container--blocomenuLink">Contacts</a>
+				<a class="header__conatiner--Languagelink" href=""><span>EN</span>/FR</a>
+			</nav>
+
+				<!--=====|Mobile|=====-->
+				
+				<nav class="blockmobileMenu">
+			    	<div class="mobileButton">MENU</div>
+			        <div class="menumobile__block">
+			        	<div class="blockbuttonexit">
+			        		<a href="" class="buttonExit">X</a>
+			        	</div>
+			        	<div class="menumobile__blockLink">	
+			            	<a href="about.html" class="menumobile__block--link">About us</a>
+							<a href="products.html" class="menumobile__block--link">Our Products</a>
+							<a href="#contact" class="menumobile__block--link contact">Contacts</a>
+			       	 	</div>
+			       	</div> 	
+				</nav>     
+		</section>
+		<div class="header__Container--blocoImgfirst">
 		</div>
-		<div class="containerProducts__blockTransfer">
-			<div class="JS"></div>
-			<div class="blockTransfer__block">
-				<h1 class="blockTransfer__block--title">Simulate your transfer</h1>
-				<p class="blockTransfer__block--paragraph">QuickCash is currently available in these countries:</p>
-				<div class="blockTransfer__blockPaises">
-					<img class="blockTransfer__blockPaises--image" 
-						src="assets/Costa-do-marfim.png"
-						title="Bandeira- Costa do Marfim">
-					<p class="blockTransfer__blockPaises--paragraph">Ivory</p>
+		<h1 class="header__contaider--Titulofirst">Breaking the boundaries between urban and rural áreas!</h1>
+	</header>	
+	<main>
+		<section class="containerProducts">
+			<h1 class="containerProducts--title">Our Products</h1>
+			<div class="containerProducts__blockOur">
+				<div class="blockOur__block">
+					<h2 class="blockOur__block--subtitle">Cash to Cash</h2>
+					<img class="blockOur__block--image" 
+						src="assets/cash.png">
+					<p class="blockOur__block--paragraph">Transfer of money from one individual to another</p>	
 				</div>
-				<div class="blockTransfer__blockPaises">
-					<img class="blockTransfer__blockPaises--image"
-						src="assets/BurkinaFaso.png"
-						title="Bandeira- Bukina Faso">
-					<p class="blockTransfer__blockPaises--paragraph">Burkina Faso</p>			
+				<div class="blockOur__block">
+					<h2 class="blockOur__block--subtitle">Cash to Card</h2>
+					<img class="blockOur__block--image" 
+						src="assets/card.png">
+					<p class="blockOur__block--paragraph">Transfer of money from an individual onto a card</p>				
 				</div>
-				<div class="blockTransfer__blockPaises">
-					<img class="blockTransfer__blockPaises--image" 
-						src="assets/mali.png"
-						title="Bandeira- Mali">
-					<p class="blockTransfer__blockPaises--paragraph">Mali</p>					
+				<div class="blockOur__block">
+					<h2 class="blockOur__block--subtitle">Cash to Account</h2>
+					<img class="blockOur__block--image" 
+						src="assets/account.png">
+					<p class="blockOur__block--paragraph">Transfer of money from an individual to a bank account</p>				
 				</div>
-				<div class="blockTransfer__blockPaises">
-					<img class="blockTransfer__blockPaises--image" 
-						src="assets/Niger.png"
-						title="Bandeira-Niger">
-					<p class="blockTransfer__blockPaises--paragraph">Niger</p>					
-				</div>
-				<div class="blockTransfer__blockPaises">
-					<img class="blockTransfer__blockPaises--image" 
-						src="assets/Togo.png"
-						title="Bandeira- Togo">
-					<p class="blockTransfer__blockPaises--paragraph">Togo</p>				
+				<div class="blockOur__block">
+					<h2 class="blockOur__block--subtitle">Nos Valeurs</h2>
+					<img class="blockOur__block--image" 
+						src="assets/valeurs.png">
+					<p class="blockOur__block--paragraph">Solidarité - Écoute Responsabilité - Volonté Innovation - Réactivité</p>				
 				</div>
 			</div>
-		</div>
-		<div class="containerProducts__blockSlide">
-			<div class="slideJS"></div>
-			<h2 class="containerProducts__blockSlide--subtitle">Writing a new page in the history of money transfer along with you!</h2>	
-        	<div class="circulos">
-		    	<div class="primeiroCirculo"></div>
-		    	<div class="segundoCirculo"></div>
-		    </div>	
-		</div>
-	</section>
-	<section class="containerAgency">
-		<div class="blockImagesub">
-			<img class="containerAgency--image" 
-			src="assets/globo.svg">
-			<h2 class="containerAgency--subtitle">Find an agency near you!</h2>
-		</div>
-		<form class="containerAgency__form">
-			<label class="containerAgency__form--label">Country</label>
-			<select id="country" name="country" placeholder="country">
-				<option value="country">Country</option>
-				<option value="Brazil">Brazil</option>
-				<option value="France">France</option>
-				<option value="Italy">Italy</option>
-				<option value="Japan">Japan</option>
-				<option value="Portugal">Portugal</option>
-				<option value="Spain">Spain</option>
-				<option value="United States">United States</option>
-				<option value="South Africa">South Africa</option>
-			</select>
-			<label class="containerAgency__form--label">State</label>
-			<select id="state" name="state" placeholder="state">
-				<option value="state">State</option>				
-				<option value="state">State</option>				
-				<option value="state">State</option>				
-				<option value="state">State</option>				
-			</select>
-			<label class="containerAgency__form--label">City</label>
-			<select id="city" name="city" placeholder="city">
-				<option value="city">City</option>				
-				<option value="city">City</option>				
-				<option value="city">City</option>				
-				<option value="city">City</option>				
-			</select>
-			<button class="containerAgency--button">Search</button>
-		</form>
-		<div class="containerAgency__blockMap">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.2113418694178!2d-4.0189632040980525!3d5.320003834709426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebb8250843ed%3A0x75f3967c3b06f8e8!2sBIAO+Bank!5e0!3m2!1spt-BR!2sbr!4v1559066212137!5m2!1spt-BR!2sbr"  frameborder="0" style="border:0" allowfullscreen></iframe>
-			<p class="containerAgency__blockMap--paragraph">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
-		</div>
-	</section>
-	<section class="containerSocial">
-		<div class="containerSocial__block">
-			<h1 class="containerSocial__block--title">Social Impact</h1>
-			<div class="containerSocial__blockImpact">
-				<img class="containerSocial__blockImpact--image" 
-					src="assets/forum-mondiale.png">	
-				<div class="blockSocial">				
-					<h3 class="blockSocial--subtitle">Quickcash au forum mondiale des droits de l’homme au Maroc</h3>
-					<p class="blockSocial--paragraph">Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme</p>
-				</div>			
+			<div class="containerProducts__blockTransfer">
+				<div class="JS"></div>
+				<div class="blockTransfer__block">
+					<h1 class="blockTransfer__block--title">Simulate your transfer</h1>
+					<p class="blockTransfer__block--paragraph">QuickCash is currently available in these countries:</p>
+					<div class="blockTransfer__blockPaises">
+						<img class="blockTransfer__blockPaises--image" 
+							src="assets/Costa-do-marfim.png"
+							title="Bandeira- Costa do Marfim">
+						<p class="blockTransfer__blockPaises--paragraph">Ivory</p>
+					</div>
+					<div class="blockTransfer__blockPaises">
+						<img class="blockTransfer__blockPaises--image"
+							src="assets/BurkinaFaso.png"
+							title="Bandeira- Bukina Faso">
+						<p class="blockTransfer__blockPaises--paragraph">Burkina Faso</p>			
+					</div>
+					<div class="blockTransfer__blockPaises">
+						<img class="blockTransfer__blockPaises--image" 
+							src="assets/mali.png"
+							title="Bandeira- Mali">
+						<p class="blockTransfer__blockPaises--paragraph">Mali</p>					
+					</div>
+					<div class="blockTransfer__blockPaises">
+						<img class="blockTransfer__blockPaises--image" 
+							src="assets/Niger.png"
+							title="Bandeira-Niger">
+						<p class="blockTransfer__blockPaises--paragraph">Niger</p>					
+					</div>
+					<div class="blockTransfer__blockPaises">
+						<img class="blockTransfer__blockPaises--image" 
+							src="assets/Togo.png"
+							title="Bandeira- Togo">
+						<p class="blockTransfer__blockPaises--paragraph">Togo</p>				
+					</div>
+				</div>
 			</div>
-			<div class="containerSocial__blockImpactD">
-				<div class="blockSocial">
-					<h3 class="blockSocial--subtitle">Quickcash participe à un atelier sur le thème : " Le secteur agricole face aux enjeux du changement climatique "</h3>
-					<p class="blockSocial--paragraph">Le 21 Novembre 2014, à l’initiative de la CGECI (Confédération Générale des Entreprises de Côte d’Ivoire) et l’UNEMAF (L’Union des Entreprises Agricoles et Forestières) s’est tenue à la Maison de l’Entreprise, sise au plateau, un atelier d’information et de sensibilisation des acteurs du secteur agricole. Les thèmes abordés étaient relatifs à l’impact des changements climatiques sur l’agriculture et les stratégies d’adaptation et d’atténuation de leurs effets.</p>
+			<div class="containerProducts__blockSlide">
+				<div class="slideJS"></div>
+				<h2 class="containerProducts__blockSlide--subtitle">Writing a new page in the history of money transfer along with you!</h2>	
+	        	<div class="circulos">
+			    	<div class="primeiroCirculo"></div>
+			    	<div class="segundoCirculo"></div>
+			    </div>	
+			</div>
+		</section>
+		<section class="containerAgency">
+			<div class="blockImagesub">
+				<img class="containerAgency--image" 
+				src="assets/globo.svg">
+				<h2 class="containerAgency--subtitle">Find an agency near you!</h2>
+			</div>
+			<form class="containerAgency__form">
+				<label class="containerAgency__form--label">Country</label>
+				<select id="country" name="country" placeholder="country">
+					<option value="country">Country</option>
+					<option value="Brazil">Brazil</option>
+					<option value="France">France</option>
+					<option value="Italy">Italy</option>
+					<option value="Japan">Japan</option>
+					<option value="Portugal">Portugal</option>
+					<option value="Spain">Spain</option>
+					<option value="United States">United States</option>
+					<option value="South Africa">South Africa</option>
+				</select>
+				<label class="containerAgency__form--label">State</label>
+				<select id="state" name="state" placeholder="state">
+					<option value="state">State</option>				
+					<option value="state">State</option>				
+					<option value="state">State</option>				
+					<option value="state">State</option>				
+				</select>
+				<label class="containerAgency__form--label">City</label>
+				<select id="city" name="city" placeholder="city">
+					<option value="city">City</option>				
+					<option value="city">City</option>				
+					<option value="city">City</option>				
+					<option value="city">City</option>				
+				</select>
+				<button class="containerAgency--button">Search</button>
+			</form>
+			<div class="containerAgency__blockMap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.2113418694178!2d-4.0189632040980525!3d5.320003834709426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebb8250843ed%3A0x75f3967c3b06f8e8!2sBIAO+Bank!5e0!3m2!1spt-BR!2sbr!4v1559066212137!5m2!1spt-BR!2sbr"  frameborder="0" style="border:0" allowfullscreen></iframe>
+				<p class="containerAgency__blockMap--paragraph">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
+			</div>
+		</section>
+		<section class="containerSocial">
+			<div class="containerSocial__block">
+				<h1 class="containerSocial__block--title">Social Impact</h1>
+				<div class="containerSocial__blockImpact">
+					<img class="containerSocial__blockImpact--image" 
+						src="assets/forum-mondiale.png">	
+					<div class="blockSocial">				
+						<h3 class="blockSocial--subtitle">Quickcash au forum mondiale des droits de l’homme au Maroc</h3>
+						<p class="blockSocial--paragraph">Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme</p>
+					</div>			
+				</div>
+				<div class="containerSocial__blockImpactD">
+					<div class="blockSocial">
+						<h3 class="blockSocial--subtitle">Quickcash participe à un atelier sur le thème : " Le secteur agricole face aux enjeux du changement climatique "</h3>
+						<p class="blockSocial--paragraph">Le 21 Novembre 2014, à l’initiative de la CGECI (Confédération Générale des Entreprises de Côte d’Ivoire) et l’UNEMAF (L’Union des Entreprises Agricoles et Forestières) s’est tenue à la Maison de l’Entreprise, sise au plateau, un atelier d’information et de sensibilisation des acteurs du secteur agricole. Les thèmes abordés étaient relatifs à l’impact des changements climatiques sur l’agriculture et les stratégies d’adaptation et d’atténuation de leurs effets.</p>
+					</div>	
+					<img class="containerSocial__blockImpact--image" 
+						src="assets/atelier-secteur-agricole.png">
+				</div>
+				<div class="containerSocial__blockImpact">
+					<img class="containerSocial__blockImpact--image" 
+							src="assets/forum-mondiale.png">				
+					<div class="blockSocial">
+						<h3 class="blockSocial--subtitle">QuickCash au forum de Lille sur la RSE</h3>
+						<p class="blockSocial--paragraph">La 8e édition du Forum Internationale de Lille, s’est ouverte du 21 au 24 Octobre 2014 devant un public de plus de 6.000 participants autour de 9 défis majeurs : Les ressources de la science et des technologies, de l’emploi, des inégalités, de l’éducation, de la démographie, la finance, de l’information et des territoires. Les cérémonies d’ouverture et de clôture a vu la participation des précurseurs du social business que sont le Pr YUNUS MUHAMMAD Prix Nobel de la Paix et TONY MELOTO.</p>
+					</div>
+				</div>
+				<a class="containerSocial--link" href="">< Show more ></a>
+			</div>
+			<div class="containerSocial__blockNews" id="news">
+				<h1 class="containerSocial__blockNews--title">News</h1>
+				<h2 class="containerSocial__blockNews--subtitle">Participation of Patricia Zoundi Yao, CEO of QuickCash in the seventh annual Global Entrepreneurship Summit (GES)</h2>
+				<p class="containerSocial__blockNews--paragraph">The CEO of QuickCash, Mrs. Patricia Zoundi Yao, participated in the seventh annual Global Entrepreneurship Summit (GES), held from the 22nd to the 24th of June 2016, at Stanford University in Silicon Valley, California. This summit gathered entrepreneurs at all stages of business development and featured new commitments to promote entrepreneurship as a driver for economic growth, social inclusion, and secure communities.</p>
+				<h2 class="containerSocial__blockNews--subtitle">Quickcash for participation in the campain « ewaste » MTN Ivory Coast</h2>
+				<p class="containerSocial__blockNews--paragraph">Launched October 7, 2015, the campaign "EWASTE" why MTN Ivory Coast and were ERICSON partnership lasted four (4) months and ended on February 7th with a ceremony at the Pullman Hotel Plateau.</p>
+				<h2 class="containerSocial__blockNews--subtitle">QuickCash honored at the National Day of Excellence 2014</h2>
+				<p class="containerSocial__blockNews--paragraph">Patricia ZOUNDI Mrs. YAO, CEO of QuickCash received the award of youth entrepreneurship on Friday 1st August at the National Day of Excellence. Held at the presidential palace, the ceremony was graced by the presence of the presidential couple, members of the government, diplomatic and responsible institution.</p>
+				<a class="containerNews--link" href="">< Show more News ></a>		
+			</div>
+		</section>
+		<section class="containerPartners">
+			<div class="containerPartners__block">
+				<h1 class="containerPartners__block--title">Banking Partners</h1>
+				<div>
+					<img class="containerPartners__block--image" 
+						src="assets/asusu.png">
+					<img class="containerPartners__block--image" 
+						src="assets/banque-populaire.png">
+					<img class="containerPartners__block--image" 
+						src="assets/boa-vert-bf.png">
+					<img class="containerPartners__block--image" 
+						src="assets/sonapost.png">
+					<img class="containerPartners__block--image" 
+						src="assets/cnce.png">
+				</div>
+			</div>
+			<div class="containerPartners__block">
+				<h1 class="containerPartners__block--title">Institutional Partners</h1>
+				<div>
+					<img class="containerPartners__block--image" 
+						src="assets/inovapay.png">
+					<img class="containerPartners__block--image" 
+						src="assets/logo2.png">
+					<img class="containerPartners__block--image" 
+						src="assets/moneytrans.png">
+					<img class="containerPartners__block--image" 
+						src="assets/stanford.png">
+					<img class="containerPartners__block--image" 
+						src="assets/camec.png">
+					<img class="containerPartners__block--image" 
+						src="assets/chamber-trust.png">
 				</div>	
-				<img class="containerSocial__blockImpact--image" 
-					src="assets/atelier-secteur-agricole.png">
 			</div>
-			<div class="containerSocial__blockImpact">
-				<img class="containerSocial__blockImpact--image" 
-						src="assets/forum-mondiale.png">				
-				<div class="blockSocial">
-					<h3 class="blockSocial--subtitle">QuickCash au forum de Lille sur la RSE</h3>
-					<p class="blockSocial--paragraph">La 8e édition du Forum Internationale de Lille, s’est ouverte du 21 au 24 Octobre 2014 devant un public de plus de 6.000 participants autour de 9 défis majeurs : Les ressources de la science et des technologies, de l’emploi, des inégalités, de l’éducation, de la démographie, la finance, de l’information et des territoires. Les cérémonies d’ouverture et de clôture a vu la participation des précurseurs du social business que sont le Pr YUNUS MUHAMMAD Prix Nobel de la Paix et TONY MELOTO.</p>
-				</div>
-			</div>
-			<a class="containerSocial--link" href="">< Show more ></a>
+		</section>
+	</main>
+	<footer id="contact">
+		<div class="footer__blockImage">
+			<img class="footer__blockImage--image" 
+				src="assets/circulos-vermelhos.png">
 		</div>
-		<div class="containerSocial__blockNews">
-			<h1 class="containerSocial__blockNews--title">News</h1>
-			<h2 class="containerSocial__blockNews--subtitle">Participation of Patricia Zoundi Yao, CEO of QuickCash in the seventh annual Global Entrepreneurship Summit (GES)</h2>
-			<p class="containerSocial__blockNews--paragraph">The CEO of QuickCash, Mrs. Patricia Zoundi Yao, participated in the seventh annual Global Entrepreneurship Summit (GES), held from the 22nd to the 24th of June 2016, at Stanford University in Silicon Valley, California. This summit gathered entrepreneurs at all stages of business development and featured new commitments to promote entrepreneurship as a driver for economic growth, social inclusion, and secure communities.</p>
-			<h2 class="containerSocial__blockNews--subtitle">Quickcash for participation in the campain « ewaste » MTN Ivory Coast</h2>
-			<p class="containerSocial__blockNews--paragraph">Launched October 7, 2015, the campaign "EWASTE" why MTN Ivory Coast and were ERICSON partnership lasted four (4) months and ended on February 7th with a ceremony at the Pullman Hotel Plateau.</p>
-			<h2 class="containerSocial__blockNews--subtitle">QuickCash honored at the National Day of Excellence 2014</h2>
-			<p class="containerSocial__blockNews--paragraph">Patricia ZOUNDI Mrs. YAO, CEO of QuickCash received the award of youth entrepreneurship on Friday 1st August at the National Day of Excellence. Held at the presidential palace, the ceremony was graced by the presence of the presidential couple, members of the government, diplomatic and responsible institution.</p>
-			<a class="containerNews--link" href="">< Show more News ></a>		
-		</div>
-	</section>
-	<section class="containerPartners">
-		<div class="containerPartners__block">
-			<h1 class="containerPartners__block--title">Banking Partners</h1>
-			<div>
-				<img class="containerPartners__block--image" 
-					src="assets/asusu.png">
-				<img class="containerPartners__block--image" 
-					src="assets/banque-populaire.png">
-				<img class="containerPartners__block--image" 
-					src="assets/boa-vert-bf.png">
-				<img class="containerPartners__block--image" 
-					src="assets/sonapost.png">
-				<img class="containerPartners__block--image" 
-					src="assets/cnce.png">
+		<div class="footer__block">
+			<img class="footer__block--image" 
+				src="assets/logo-footer.png">
+			<div class="footer__blockAdress">
+				<span class="blockAdress__block">
+					<img class="blockAdress__block--image" 
+						src="assets/locationicon.svg">
+					<p class="blockAdress__block--paragraph">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
+				</span>
+				<span class="blockAdress__block">
+					<img class="blockAdress__block--image" 
+						src="assets/phoneicon.svg">
+					<p class="blockAdress__block--paragraph">Tel: (225) 20 32 25 35</p>					
+				</span>
+				<span class="blockAdress__block">
+					<img class="blockAdress__block--image" 
+						src="assets/emailicon.svg">
+					<p class="blockAdress__block--paragraph">Email: infos@quickcashci.com</p>					
+				</span>
 			</div>
 		</div>
-		<div class="containerPartners__block">
-			<h1 class="containerPartners__block--title">Institutional Partners</h1>
-			<div>
-				<img class="containerPartners__block--image" 
-					src="assets/inovapay.png">
-				<img class="containerPartners__block--image" 
-					src="assets/logo2.png">
-				<img class="containerPartners__block--image" 
-					src="assets/moneytrans.png">
-				<img class="containerPartners__block--image" 
-					src="assets/stanford.png">
-				<img class="containerPartners__block--image" 
-					src="assets/camec.png">
-				<img class="containerPartners__block--image" 
-					src="assets/chamber-trust.png">
-			</div>	
+		<div class="footer__blockLinkImage">
+			<div class="blockLinkImage__block">
+				<a class="blockLinkImage__block--link" href="about.html" target="__blank">About us</a>
+				<a class="blockLinkImage__block--link" href="products.html" target="__blank">Our Products</a>
+				<a class="blockLinkImage__block--link" href="#news">News</a>
+				<a class="blockLinkImage__block--link" href="#contact">Contact</a>
+			</div>
+			<div class="blockimagecircle">
+				<img class="blockimagecircle__block--image" 
+					src="assets/circulos-brancos.png">
+			</div>
 		</div>
-	</section>
+	</footer>
+	<div class="block__desenv">
+		<p class="block__desenv--paragraph">Copyright&copy;2019 Funperj - All Rights Reserved Developed by Vai na Web</p>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>
