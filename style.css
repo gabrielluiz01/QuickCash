@@ -228,7 +228,7 @@ header {
 .faleConosco-titulo-titulo{
 	font-size: 1rem;
 	font-weight: 800;
-  flex: 0.67;
+  	flex: 0.67;
 }
 	@media (max-width: 768px) {
 		.faleConosco-titulo-titulo{
@@ -276,8 +276,7 @@ header {
 	@media (max-width: 768px) {
 		#message{
 			margin-bottom: 0;
-			padding-bottom:25%;
-
+			padding-bottom: 25%;
 		}
 	}
 
@@ -287,11 +286,6 @@ header {
 	  flex-direction: row;
 	  background-color: white;
 }
-	@media (max-width: 768px) {
-		.buttons {
-
-		}
-	}
 .cancel{
 	  border: 1px solid rgba(238,51,37,1);
 	  background-color: white;
@@ -343,9 +337,7 @@ header {
 			.buttomContact p{
 				display: none;
 			}		
-		}
-/*==========*/
-/*==========*/
+	}
 .containerProducts{
 	width: 100%;
 	display: flex;
@@ -531,10 +523,6 @@ header {
 	color: rgba(107, 107, 107, 1);
 	display: block;
 }
-
-
-
-
 .blockTransfer__block{
 	width: 40%;
 	display: flex;
@@ -642,19 +630,19 @@ header {
 .label{
 	min-width: 90%;
 }
-.slide-block-image{
+.slide-block-image, .slide-block-image2, .slide-block-image3{
     height: 75vh;
     margin: 0 2vw;
+}
+.slide-block-image2, .slide-block-image3{
+	display: none;
 }
 .slide-block-arrow{
     height: 5vh;
     position: absolute;
     top: 35vh;
 }
-input{
-    display: none;
 
-}
 .history-text{
     min-width: 25vw;
     font-size: 1.4rem;
