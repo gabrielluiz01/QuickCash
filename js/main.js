@@ -1,3 +1,52 @@
+// Slide
+
+$(document).ready(function ($) {
+
+    $('#checkbox').change(function(){
+      setInterval(function () {
+          moveRight();
+      }, 3000);
+    });
+    
+    var slideCount = $('#slide .slide-block .slide-block-image').length;
+    var slideWidth = $('#slide .slide-block .slide-block-image');
+    var slideHeight = $('#slide .slide-block .slide-block-image');
+    var sliderUlWidth = slideCount * slideWidth;
+    
+    $('#slide').css({ width: slideWidth, height: slideHeight });
+    
+    $('#slide .slide-block').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+    
+    $('#slide .slide-block .slide-block-image:last-child').prependTo('#slide .slide-block');
+
+    function moveLeft() {
+        $('#slide .slide-block').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slide .slide-block img:last-child').prependTo('#slide .slide-block');
+            $('#slide .slide-block').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slide .slide-block').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slide .slide-block .slide-block-image:first-child').appendTo('#slide .slide-block');
+            $('#slide .slide-block').css('left', '');
+        });
+    };
+
+    $('.slide-block-arrowRight').click(function () {
+        moveLeft();
+    });
+
+    $('.slide-block-arrowLeft').click(function () {
+        moveRight();
+    });
+
+});   
+
 $(function(){
     $('.mobileButton').click(function(){
         $('.menumobile__block').css('display','block');
@@ -87,51 +136,3 @@ $(function(){
     });   
 });
 
-$(document).ready(function(){
-    $(".mostrar").hide();
-    $(".ocultar").click(function(){
-        $(this).next(".mostrar").slideToggle(600);
-    });
-}); 
-$('.arrow').on('click', function() {
-    $(this).toggleClass('active');
-});
-$('.arrow--l-r').on('click', function() {
-    $(this).toggleClass('left right');
-});
-
-var slidesIncentivadores = 1;
-showIncentivadores(slidesIncentivadores);
-
-function plusIncentivadores(n){
-  showIncentivadores(slidesIncentivadores += n);
-}
-
-function showIncentivadores(n){
-  var i;
-  var x = document.getElementsByClassName("contEncouraging-container");
-  if (n > x.length) {slidesIncentivadores = 1}
-  if (n < 1 ) {slidesIncentivadores = x.length};
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slidesIncentivadores-1].style.display = "flex";
-};
-
-var slidesProjects = 1;
-showProjects(slidesProjects);
-
-function plusProjects(n){
-  showProjects(slidesProjects += n);
-}
-
-function showProjects(n){
-  var i;
-  var x = document.getElementsByClassName("contProject-container");
-  if (n > x.length) {slidesProjects = 1}
-  if (n < 1 ) {slidesProjects = x.length};
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slidesProjects-1].style.display = "flex";
-};
