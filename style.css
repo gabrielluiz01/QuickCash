@@ -123,9 +123,8 @@ header {
 	}
 .mobileButton{
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
 	color: rgba(238,51,37,1);
-	font-size: 15px;
+	font-size: 20px;
 	margin-right: 20px;
 	display: none;
 	cursor: pointer;
@@ -476,6 +475,11 @@ header {
 	align-items: center;
 	border-radius: 1.5rem 1.5rem 0 0;
 	background-color:#0083CA;
+}
+@media (max-width: 425px){
+	.convert-block{
+		padding: 0 5vw;
+	}
 }
 .convert-blockFrom, .convert-blockTo{
 	display: flex;
@@ -958,6 +962,11 @@ iframe{
     align-items: flex-end;
     padding: 15vh 0;
 }
+@media (max-width: 425px){
+	.containerPartners{
+		align-items: center;
+	}
+}
 .containerPartners__block{
 	width: 80%;
     display: flex;
@@ -984,7 +993,7 @@ iframe{
 @media (max-width: 425px){
 	.containerPartners__block--image{
     height: 53px;
-    width: 64px;
+    width: 60px;
     margin: 10px;
 	}
 }
@@ -995,7 +1004,8 @@ iframe{
 @media (max-width: 425px){
 	.containerPartners__block--imageM{
     height: 44px;
-    width: 95px;
+		width: 95px;
+		margin: 10px;
 	}
 }
 
@@ -1087,7 +1097,7 @@ iframe{
 	width: 100%;
 	color: #fff;
 	font-size: 18px;
-	font-family: 'Montserrat', sans-serif;	
+	font-family: 'Muli', Light;	
 	margin-top: 10vh;
 }  
 @media (max-width: 768px){
@@ -1121,8 +1131,33 @@ iframe{
 	margin-right: 10vw;
 	margin-top: 5vh;
 }
+@media (max-width: 425px){
+	.containerAbout__blockValeurs__blockEnd{
+	margin-right: 30vw;
+	}
+}
 @media (max-width: 768px){
 	.containerAbout__blockValeurs__blockEnd{
+		width: 100%;
+		align-self: flex-start;
+	}
+}
+.containerAbout__blockValeurs__blockEndC{
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	align-self: flex-end;
+	position: relative;
+	margin-right: 10vw;
+	margin-top: 5vh;
+}@media (max-width: 425px){
+	.containerAbout__blockValeurs__blockEndC{
+		position: relative;
+		right: 20vw;
+	}
+}
+@media (max-width: 768px){
+	.containerAbout__blockValeurs__blockEndC{
 		width: 100%;
 		align-self: flex-start;
 	}
@@ -1140,7 +1175,6 @@ iframe{
 	}
 }
 .blockValeurs--imageC{
-	width: 250px;
 	position: relative;
 	left: 7vw;
 	bottom: 5vh;
@@ -1148,15 +1182,26 @@ iframe{
 }
 @media (max-width: 425px){
 	.blockValeurs--imageC{
-	width: 95px;
-    height: 125px;
-    left: 30px;
+		width: 250px;
+    height: 150px;
+    left: 15vw;
 	}
 }
 @media (max-width: 600px){
 	.blockValeurs--imageC{
 		max-width: 180px;
 		max-height: 180px;
+	}
+}
+.blockValeurs--imageM{
+	width: 250px;
+	position: relative;
+	left: 5vw;
+}
+@media (max-width: 600px){
+	.blockValeurs--imageM{
+		width: 120px;
+		left: 15vw;
 	}
 }
 .blockValeurs__blockText{
@@ -1215,17 +1260,18 @@ iframe{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 10vh 0;
 }
 .containerBoardNews__blockBoard--title{
 	font-size: 30px;
-	color: #ff0000;
+	color: #EE3325;;
 	align-self: flex-start;
 	margin: 50px 120px;
 }
 @media (max-width: 600px){
 	.containerBoardNews__blockBoard--title{
-    	align-self: center;
-    	width: 70%;
+			width: 55%;
+			align-self: center;
 	}
 }
 .blockBoard__block{
@@ -1276,7 +1322,7 @@ iframe{
 }
 .blockBoard__blockImages--paragraph{
 	width: 80%;
-	font-size: 11px;
+	font-size: 15px;
 	margin-left: 20px;
 }
 @media (max-width: 600px){
@@ -1292,7 +1338,7 @@ iframe{
 }
 .blockBoard__block--paragraph{
 	width: 60%;
-	font-size: 13px;
+	font-size: 15px;
 	margin-left: 20px;
 	line-height: 20px;
 }
@@ -1306,6 +1352,11 @@ iframe{
 		width: 90%;
 		align-self: center;
 	}
+}
+.paragraph-opacity{
+	opacity: 0.6;
+	line-height: 1.8em;
+	padding: 0 5vw;
 }
 .containerBoardNews__block{
 	width: 100%;
@@ -1344,7 +1395,7 @@ iframe{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #FFE4F3;
+	background-color: #FFF3F2;
 	border-radius: 3%;
 	padding: 10px;
 	margin: 50px 0px;
@@ -1365,7 +1416,8 @@ iframe{
 	margin-bottom: 5px;
 }
 .blockNews__miniblock--paragraph{
-	font-size: 13px;
+	font-size: 15px;
+	font-family: 'Muli';
 }
 /*PÁGINA PRODUTOS*/
 
@@ -1631,7 +1683,7 @@ iframe{
     color: #000;
     font-family: 'Montserrat Alternates';
     font-size: 13px;
-		opacity: 0.6;
+		opacity: 0.7;
 }
 @media (max-width: 425px){
     .block__desenv--paragraph{
