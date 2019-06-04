@@ -347,8 +347,23 @@ header {
 }
 @media (max-width: 485px){
 	.containerProducts--title{
+		display: none;
+	}
+}
+.containerProducts--titleresp{
+		width: 50%;
+		color: #fff;
+		font-size: 30px;
+		font-family: 'Montserrat', sans-serif;
+		display: none;
+}
+@media (max-width: 485px){
+	.containerProducts--titleresp{
+		display: block;
 		text-align: center;
-		width: 70%;
+		width: 80%;
+		align-self: center;
+		margin-right: 5vw;
 	}
 }
 .containerProducts--titleP{
@@ -520,12 +535,23 @@ header {
 	font-size: 35px;
 	font-family: 'Montserrat', sans-serif;;
 }
+@media (max-width: 425px){
+	.blockTransfer__block--title{
+		width: 80%;
+	}
+}
 .blockTransfer__block--paragraph{
 	width: 45%;
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	margin: 30px 0px;
 	font-weight: 600;
+}
+@media (max-width: 425px){
+	.blockTransfer__block--paragraph{
+		width: 70%;
+		font-size: 20px;
+	}
 }
 .blockTransfer__blockPaises{
 	width: 50%;
@@ -610,7 +636,6 @@ header {
 	height: 85vh;
 	line-height: 300px;
   }
-  
   .slide-block-arrowRight, .slide-block-arrowLeft {
 	position: absolute;
 	top: 45%;    
@@ -668,8 +693,7 @@ header {
 	}
 }
 .blockImagesub{
-	width: 30%;
-    min-height: 35vh;
+		width: 30%;
     flex-direction: row-reverse;
     position: relative;
     z-index: 10;
@@ -720,7 +744,7 @@ header {
 	}
 }
 .containerAgency__form{
-	width: 25%;
+		width: 25%;
     min-height: 35vh;
     display: flex;
     flex-direction: column;
@@ -729,7 +753,7 @@ header {
 }
 @media (max-width: 485px){
 	.containerAgency__form{
-		width: 80%;
+		width: 100%;
 	}
 }
 label{
@@ -747,6 +771,9 @@ select{
 @media (max-width: 485px){
 	select{
 		margin: 20px 0px;
+		font-family: 'Montserrat', sans-serif;
+    color: #6b6b6b;
+    font-size: 17px;
 	}
 }
 button{
@@ -758,7 +785,8 @@ button{
 }
 @media (max-width: 485px){
 	button{
-		margin-bottom: 20px;
+		margin: 5vh 2vw;
+    font-size: 17px;
 	}
 }
 .containerAgency__blockMap{
@@ -769,8 +797,8 @@ button{
 }
 @media (max-width: 485px){
 	.containerAgency__blockMap{
-		width: 80vw;
-		margin-bottom: 20px;
+    width: 100%;
+    margin: 5vh 3vw 5vh 0;
 	}
 }
 iframe{
@@ -780,6 +808,7 @@ iframe{
 .containerAgency__blockMap--paragraph{
 	font-family: 'Montserrat Alternates';
 	font-size: 15px;
+	margin-top: 2vh
 }
 .containerSocial{
 	width: 100%;
@@ -808,6 +837,11 @@ iframe{
 	font-size: 28px;
 	margin-top: 20px;
 }
+@media (max-width: 425px){
+	.containerSocial__block--title{
+		text-align: center;
+	}
+}
 .containerSocial__blockImpact, .containerSocial__blockImpactD{
 	width: 55vw;
 	min-height: 30vh;
@@ -820,14 +854,16 @@ iframe{
 }
 @media (max-width: 485px){
 	.containerSocial__blockImpactD{
-		width: 100%;
+		width: 80%;
 		flex-direction: column-reverse;
+		align-self: center;
 	}
 }
 @media (max-width: 485px){
 	.containerSocial__blockImpact{
-		width: 100%;
+		width: 80%;
 		flex-direction: column;
+		align-self: center;
 	}
 }
 .containerSocial__blockImpact--image{
@@ -842,20 +878,20 @@ iframe{
 }
 .blockSocial--subtitle{
 	font-size: 17px;
-	margin-bottom: 10px;
 	font-family: 'Montserrat', sans-serif;
-	padding: 10px 5px;
+	padding: 2vh 2vh;
 }
 .blockSocial--paragraph{
 	font-size: 13px;
 	font-family: 'Muli', sans-serif;
-	padding: 10px 5px;
+	padding: 3vh 2vw;
 }
 .containerSocial--link{
 	font-size: 10px;
 	color: #459FD9;
 	font-family: 'Montserrat', sans-serif;
 	align-self: center;
+	margin: 3vh 0;
 }
 .containerSocial__blockNews{
 	width: 30%;
@@ -867,6 +903,7 @@ iframe{
 @media (max-width: 485px){
 	.containerSocial__blockNews{
 		width: 100%;
+		border-radius: 0;
 	}
 }
 .containerSocial__blockNews--title{
@@ -946,8 +983,19 @@ iframe{
 }
 @media (max-width: 425px){
 	.containerPartners__block--image{
-		height: 44px;
-    	width: 66px;
+    height: 53px;
+    width: 64px;
+    margin: 10px;
+	}
+}
+.containerPartners__block--imageM{
+	height: 50px;
+	margin: 15px 60px 0px 0px;
+}
+@media (max-width: 425px){
+	.containerPartners__block--imageM{
+    height: 44px;
+    width: 95px;
 	}
 }
 
@@ -1576,19 +1624,22 @@ iframe{
 }
 .block__desenv{
     width: 100%;
-    
+    background-color:#ee3325;
 }
 .block__desenv--paragraph{
     width: 70%;
     color: #000;
     font-family: 'Montserrat Alternates';
     font-size: 13px;
-    opacity: 0.6;
+		opacity: 0.6;
 }
 @media (max-width: 425px){
     .block__desenv--paragraph{
-        width: 100%;
-        margin-right: 15px;
+			width: 92%;
+			margin-right: 15px;
+			text-align: center;
+			align-self: center;
+			padding: 2vh 0 2vh 10vw;
     }
 }
 @media (max-width: 768px){
