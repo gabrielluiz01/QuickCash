@@ -158,7 +158,43 @@
 			</div>
 		</section>
 			<div class="containerProducts__blockTransfer">
-				<div class="JS"></div>
+				<div class="simulate">
+					<div class="convert">
+						<div class="convert-block"> 
+							<div class="convert-blockFrom">
+								<p class="convert-blockForm-text">From:</p>
+								<span>
+									<img class="image" src=assets/globo.svg alt="country" name="BRL">
+									<select class="select" name="countryFrom" id="from">
+										<option value="BRL">Brazil</option>
+										<option value="USD">EUA</option>
+										<option value="EUR">Inglaterra</option>
+									</select>
+								</span>
+							</div>
+						<div class="convert-blockTo">
+							<p class="convert-blockForm-text">To:</p>
+							<span>
+								<img class="image" src=assets/globo.svg alt="country" name="EUA">
+								<select class="select" name="countryTo" id="to">
+									<option value="USD">EUA</option>
+									<option value="EUR">Inglaterra</option>
+									<option value="BRL">Brazil</option>
+								</select>
+							</span>
+						</div>
+					</div>
+					<div class="convert-values">
+						<div class="convert-valuesSend">
+							<p class="convert-valuesSend-text">Your send</p>
+							<input class="convert-valuesSend-input" type="text" id="coin">
+						</div>
+						<div class="convert-valueReceive">
+							<p class="convert-valuesSend-text">They receive</p>
+							<input class="convert-valuesSend-input" type="text" id="result">
+						</div>
+					</div>	
+				</div>
 				<div class="blockTransfer__block">
 					<h1 class="blockTransfer__block--title">Simulate your transfer</h1>
 					<p class="blockTransfer__block--paragraph">QuickCash is currently available in these countries:</p>
@@ -194,46 +230,47 @@
 					</div>
 				</div>
 			</div>
-			<section class="containerAgency">
-				<div class="blockImagesub">
-					<img class="containerAgency--image" 
-					src="assets/globo.svg">
-					<h2 class="containerAgency--subtitle">Find an agency near you!</h2>
-				</div>
-				<form class="containerAgency__form">
-					<label class="containerAgency__form--label">Country</label>
-					<select id="country" name="country" placeholder="country">
-						<option value="country">Country</option>
-						<option value="Brazil">Brazil</option>
-						<option value="France">France</option>
-						<option value="Italy">Italy</option>
-						<option value="Japan">Japan</option>
-						<option value="Portugal">Portugal</option>
-						<option value="Spain">Spain</option>
-						<option value="United States">United States</option>
-						<option value="South Africa">South Africa</option>
-					</select>
-					<label class="containerAgency__form--label">State</label>
-					<select id="state" name="state" placeholder="state">
-						<option value="state">State</option>				
-						<option value="state">State</option>				
-						<option value="state">State</option>				
-						<option value="state">State</option>				
-					</select>
-					<label class="containerAgency__form--label">City</label>
-					<select id="city" name="city" placeholder="city">
-						<option value="city">City</option>				
-						<option value="city">City</option>				
-						<option value="city">City</option>				
-						<option value="city">City</option>				
-					</select>
-					<button class="containerAgency--button">Search</button>
-				</form>
-				<div class="containerAgency__blockMap">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.2113418694178!2d-4.0189632040980525!3d5.320003834709426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebb8250843ed%3A0x75f3967c3b06f8e8!2sBIAO+Bank!5e0!3m2!1spt-BR!2sbr!4v1559066212137!5m2!1spt-BR!2sbr"  frameborder="0" style="border:0" allowfullscreen></iframe>
-					<p class="containerAgency__blockMap--paragraph">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
-				</div>
-			</section>
+		</section>
+		<section class="containerAgency">
+			<div class="blockImagesub">
+				<img class="containerAgency--image" 
+				src="assets/globo.svg">
+				<h2 class="containerAgency--subtitle">Find an agency near you!</h2>
+			</div>
+			<form class="containerAgency__form">
+				<label class="containerAgency__form--label">Country</label>
+				<select id="country" name="country" placeholder="country">
+					<option value="country">Country</option>
+					<option value="Brazil">Brazil</option>
+					<option value="France">France</option>
+					<option value="Italy">Italy</option>
+					<option value="Japan">Japan</option>
+					<option value="Portugal">Portugal</option>
+					<option value="Spain">Spain</option>
+					<option value="United States">United States</option>
+					<option value="South Africa">South Africa</option>
+				</select>
+				<label class="containerAgency__form--label">State</label>
+				<select id="state" name="state" placeholder="state">
+					<option value="state">State</option>				
+					<option value="state">State</option>				
+					<option value="state">State</option>				
+					<option value="state">State</option>				
+				</select>
+				<label class="containerAgency__form--label">City</label>
+				<select id="city" name="city" placeholder="city">
+					<option value="city">City</option>				
+					<option value="city">City</option>				
+					<option value="city">City</option>				
+					<option value="city">City</option>				
+				</select>
+				<button class="containerAgency--button">Search</button>
+			</form>
+			<div class="containerAgency__blockMap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.2113418694178!2d-4.0189632040980525!3d5.320003834709426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebb8250843ed%3A0x75f3967c3b06f8e8!2sBIAO+Bank!5e0!3m2!1spt-BR!2sbr!4v1559066212137!5m2!1spt-BR!2sbr"  frameborder="0" style="border:0" allowfullscreen></iframe>
+				<p class="containerAgency__blockMap--paragraph">Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01</p>
+			</div>
+		</section>
 	</main>			
 	<footer id="contact">
 		<div class="footer__blockImage">
@@ -275,7 +312,7 @@
 		</div>
 	</footer>
 	<div class="block__desenv">
-		<p class="block__desenv--paragraph">Copyright&copy;2019 Funperj - All Rights Reserved Developed by Vai na Web</p>
+		<p class="block__desenv--paragraph">Copyright&copy;2019 QuickCash - All Rights Reserved <b>Developed by Vai na Web</b></p>
 	</div>	
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/products.js"></script>
