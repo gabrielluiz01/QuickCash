@@ -1165,7 +1165,6 @@ iframe{
 	width: 50%;
 	align-self: flex-end;
 	position: relative;
-	margin-right: 10vw;
 	margin-top: 5vh;
 }
 @media (max-width: 425px){
@@ -1185,7 +1184,6 @@ iframe{
 	width: 50%;
 	align-self: flex-end;
 	position: relative;
-	margin-right: 10vw;
 	margin-top: 5vh;
 }@media (max-width: 425px){
 	.containerAbout__blockValeurs__blockEndC{
@@ -1201,41 +1199,44 @@ iframe{
 }
 .blockValeurs--image{
 	max-height: 150px;
-	max-width: 200px;
-	position: relative;
-	left: 5vw;
+    max-width: 200px;
+    position: absolute;
+    right: 45vw;
+    bottom: -4vw;
 }
-@media (max-width: 600px){
+@media (max-width: 768px){
 	.blockValeurs--image{
 		width: 150px;
 		height: 100px;
+		right: 64vw;
+   		bottom: -3vw;
 	}
 }
 .blockValeurs--imageC{
-	position: relative;
-	left: 7vw;
-	bottom: 5vh;
-	opacity: 0.3;
+    position: absolute;
+    right: 40vw;
+    top: -6vh;
+    opacity: 0.3;
 }
 @media (max-width: 425px){
 	.blockValeurs--imageC{
 		width: 250px;
-    height: 150px;
-    left: 15vw;
+    	height: 150px;
+    	left: 15vw;
 	}
 }
-@media (max-width: 600px){
+@media (max-width: 768px){
 	.blockValeurs--imageC{
-		max-width: 180px;
-		max-height: 180px;
+		max-width: 250px;
+		right: 57vw;
 	}
 }
 .blockValeurs--imageM{
-	width: 250px;
-	position: relative;
-	left: 5vw;
+	width: 200px;
+    position: absolute;
+    right: 40vw
 }
-@media (max-width: 600px){
+@media (max-width:768px){
 	.blockValeurs--imageM{
 		width: 120px;
 		left: 15vw;
@@ -1247,9 +1248,11 @@ iframe{
 	flex-direction: column;
 	justify-content: center;
 }
-@media (max-width: 600px){
+@media (max-width: 768px){
 	.blockValeurs__blockText{
 		width: 100%;
+		justify-content: flex-end;
+		background-color: purple;
 	}
 }
 .blockValeurs__blockText--subtitle{
@@ -1258,11 +1261,21 @@ iframe{
 	margin-bottom: 5px;
 	z-index: 2;
 }
+@media (max-width: 768px){
+	.blockValeurs__blockText--subtitle{
+		text-align: center;
+	}
+}
 .blockValeurs__blockText--paragraph{
-	color: #fff;
-	font-size: 16px;
-	font-family: 'Montserrat',sans-serif;
-	z-index: 2;
+    width: 75%;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Muli', sans-serif;
+}
+@media (max-width: 768px){
+	.blockValeurs__blockText--paragraph{
+		align-self: flex-end;
+	}
 }
 @media (max-width: 425px){
 	.blockValeurs__blockText--paragraph{
@@ -1272,15 +1285,15 @@ iframe{
 }
 .containerAbout__blockValeurs__blockStr{
 	display: flex;
-	flex-direction: row;
-	width: 50%;
-	position: relative;
-	margin-left: 10vw;	
-	margin-top: 5vh;
+    flex-direction: row;
+    width: 50%;
+    position: relative;
+    left: 10vw;
+    margin-top: 13vh;
 }
 @media (max-width: 768px){
 	.containerAbout__blockValeurs__blockStr{
-		width: 100%;
+		width: 90%;
 		margin-left: 0;
 	}
 }
