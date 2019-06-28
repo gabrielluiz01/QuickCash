@@ -57,6 +57,10 @@ $(function(){
     $('.contact').click(function(){
         $('.menumobile__block').css('display','none');
     });
+    $('.mobileButton').click(function(){
+        $('.buttomContact').css('display', 'none');
+        $('.header__conatiner--Languagelink').css('display', 'flex');
+    });
 });
 
 
