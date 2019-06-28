@@ -487,7 +487,7 @@ header {
 @media (max-width: 768px){
 	.convert{
 		height: 80vh;
-		width: 50vw;
+		min-width: 50vw;
 	}
 }
 .convert-block{
@@ -653,9 +653,10 @@ header {
 }
 @media (max-width: 450px){
 	.history #slide .slide-block .slide-block-image {
-    width: 95vw;
-    height: 75vh;
-	margin: 5vh 2vw 0 0;
+		width: 91vw;
+		height: 75vh;
+		margin: 5vh 2vw 0 0;
+		left: 2vw;
 	}
 }
 #slide {
@@ -666,7 +667,14 @@ header {
 	overflow: hidden;
 	border-radius: 4px;
   }
-  
+  @media (max-width: 425px){
+	  #slide{
+		overflow: initial;
+		left: -23vw;
+		height: 65vh;
+	
+	  }
+  }
   .slide-block {
 	  position: relative;
 	  margin: 0;
@@ -690,7 +698,13 @@ header {
 	z-index: 99;
 	display: block;    
 	cursor: pointer;
-
+  }
+  @media (max-width: 425px){
+	.slide-block-arrowRight, .slide-block-arrowLeft{
+		top: 36vh;
+		margin-left: 3vw;
+		margin-right: -41vw;
+	}
   }
   
   .slide-block-arrowRight:hover, .slide-block-arrowLeft:hover {
