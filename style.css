@@ -487,7 +487,11 @@ header {
 @media (max-width: 768px){
 	.convert{
 		height: 80vh;
+<<<<<<< HEAD
 		min-width: 50vw;
+=======
+		width: 50vw;
+>>>>>>> 1e23178861b1cdabc0cc831a5c1b48bf808f9fe7
 	}
 }
 .convert-block{
