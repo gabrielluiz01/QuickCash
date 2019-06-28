@@ -923,6 +923,7 @@ iframe{
 	font-family: 'Montserrat', sans-serif;
 	align-self: center;
 	padding-left: 3vw;
+	margin-bottom: 5vh;
 }
 .containerSocial__blockNews{
 	width: 30%;
@@ -1075,9 +1076,11 @@ iframe{
 	flex-direction: column;
 	margin-right: 20vw;
 }
-@media (max-width: 375px){
+@media (max-width: 425px){
 	.containerAbout__blockImages{
+		width: 100%;
 		align-items: center;
+		margin: 0 5vw;
 	}
 }
 
@@ -1124,12 +1127,13 @@ iframe{
 } 
 @media (max-width: 600px){
 	.containerAbout__blockText{
-		min-width: 60%;
+		margin-left: 5vw;
 	}
 }
 @media (max-width: 768px){
 	.containerAbout__blockText{
 		padding-top: 50px;
+		width: 100%;
 	}
 }
 .containerAbout__blockText--paragraph{
@@ -1141,7 +1145,9 @@ iframe{
 }  
 @media (max-width: 768px){
 	.containerAbout__blockText--paragraph{
-		margin-top: 5vh;
+		margin-top: 2vh;
+		width: 100%;
+		font-size: 18px;
 	}
 }
 .containerAbout__blockValeurs{
@@ -1156,18 +1162,43 @@ iframe{
 	align-self: flex-start;
 	margin: 3vh 2.5	vw;	
 }
+@media (max-width: 768px){
+	.containerAbout__blockValeurs--title{
+		margin: 15vh 0;
+	}	
+}
 .containerAbout__blockValeurs__blockEnd{
 	width: 30%;
 	position: relative;
 	display: flex;
 	align-self: flex-end;
 }
+@media (max-width: 768px){
+	.containerAbout__blockValeurs__blockEnd{
+		width: 70%;
+		align-self: center;
+		margin: 5vh 0 5vh 10vw;
+	}
+}
 .blockValeurs--imageC{
 	width: 500px;
 	opacity: 0.3;
 	position: absolute;
-	right: 13vw;
+	right: 10vw;
 	bottom: 3vh;
+}
+@media (max-width: 425px){
+	.blockValeurs--imageC{
+		width: 300px;
+		left: -50vw;
+	}
+}
+@media (max-width: 768px){
+	.blockValeurs--imageC{
+		width: 400px;
+		right: 43vw;
+		top: -10vh;
+	}
 }
 .blockValeurs__blockText{
 	display: flex;
@@ -1179,6 +1210,11 @@ iframe{
 	font-family: 'Montserrat';
 	margin: 15px 15px;
 }
+@media (max-width: 768px){
+	.blockValeurs__blockText--subtitle{
+		font-size: 30px;
+	}
+}
 .blockValeurs__blockText--paragraph{
 	width: 90%;
 	font-size: 19px;
@@ -1186,17 +1222,48 @@ iframe{
 	color: #fff;
 	margin: 15px 15px;
 }
+@media (max-width: 768px){
+	.blockValeurs__blockText--paragraph{
+		font-size: 17px;
+	}
+}
 .blockValeurs--imageM{
-	width: 300px;
+	max-width: 300px;
 	position: absolute;
 	right: 23vw;
 	top: 3vh;
 }
+@media (max-width: 425px){
+	.blockValeurs--imageM{
+		width: 170px;
+		left: -20vw;
+	}
+}
+@media (max-width: 768px){
+	.blockValeurs--imageM{
+		max-width: 200px;
+		right: 53vw;
+	}
+}
 .blockValeurs--imageL{
-	width: 280px;
+	max-width: 280px;
 	position: absolute;
 	right: 23vw;
 	bottom: -8vh;
+}
+@media (max-width: 425px){
+	.blockValeurs--imageL{
+		width: 140px;
+		left: -20vw;
+		top: -3vh;
+	}
+}
+@media (max-width: 768px){
+	.blockValeurs--imageL{
+		max-width: 180px;
+		right: 60vw;
+		bottom: -3vh;
+	}
 }
 .containerAbout__blockValeurs__blockStr{
 	width: 30%;
@@ -1205,23 +1272,67 @@ iframe{
 	align-self: center;
 	right: 20vw;
 }
+@media (max-width: 768px){
+	.containerAbout__blockValeurs__blockStr{
+		width: 70%;
+		align-self: flex-end;
+		margin: 5vh -12vw 5vh 0;
+	}
+}
 .blockValeurs--imageO{
-	width: 150px;
+	max-width: 150px;
 	position: absolute;
 	right: 25vw;
 	bottom: 5vh;
 }
+@media (max-width: 425px){
+	.blockValeurs--imageO{
+		width: 110px;
+		left: -15vw;
+		top: -3vh;
+	}
+}
+@media (max-width: 768px){
+	.blockValeurs--imageO{
+		max-width: 120px;
+		right: 60vw;
+	}
+}
 .blockValeurs--image{
-	width: 230px;
+	max-width: 230px;
 	position: absolute;
 	right: 22vw;
 	bottom: 2vh;
 }
+@media (max-width: 425px){
+	.blockValeurs--image{
+		width: 150px;
+		left: -23vw;
+	}
+}
+@media (max-width: 768px){
+	.blockValeurs--image{
+		max-width: 180px;
+		right: 60vw;
+	}
+}
 .blockValeurs--imageR{
-	width: 230px;
+	max-width: 230px;
 	position: absolute;
 	right: 24vw;
 	bottom: 2vh;
+}
+@media (max-width: 425px){
+	.blockValeurs--imageR{
+		width: 155px;
+		left: -23vw;
+	}
+}
+@media (max-width: 768px){
+	.blockValeurs--imageR{
+		max-width: 200px;
+		right: 60vw;
+	}
 }
 
 
@@ -1279,6 +1390,11 @@ iframe{
 	margin-bottom: 50px;
 	padding-bottom: 10px;
 }
+@media (max-width: 600px){
+	.blockBoard__blockC{
+		flex-direction: column;
+	}
+}
 .blockBoard__block{
 	width: 80%;
 	min-height: 55vh;
@@ -1311,6 +1427,13 @@ iframe{
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 15vh;
+}
+@media (max-width: 600px){
+	.blockBoard__blockImagesP{
+		width: 80%;
+		margin-bottom: 30px;
+		align-items: center;
+	}
 }
 .blockBoard__blockImage--image{
 	width: 180px;
