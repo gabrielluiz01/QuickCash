@@ -59,6 +59,7 @@ header {
 	@media(max-width: 720px){
 		.header__conatiner--Languagelink{
 			display: none;
+			font-size: 20px;
 		}
 	}
 .header__conatiner--BlocoMenu span{
