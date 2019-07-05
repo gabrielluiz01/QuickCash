@@ -18,8 +18,8 @@
 			<!-- ==== Menu-Desktop ==== -->
 
 			<nav class="header__container--BlocoMenu">
-				<a href="about.html" target="__blank" class="header__container--blocomenuLink">About us</a>
-				<a href="products.html" target="__blank" class="header__container--blocomenuLink">Our Products</a>
+				<a href="about.html" class="header__container--blocomenuLink">About us</a>
+				<a href="products.html" class="header__container--blocomenuLink">Our Products</a>
 				<a href="#contact" class="header__container--blocomenuLink">Contacts</a>
 				<a class="header__conatiner--Languagelink" href="productsfr.html">EN</span>/FR</a>
 			</nav>
@@ -46,26 +46,26 @@
 		<section class="containerProducts">
 			<h1 class="containerProducts--titleP">Our Products</h1>
 			<div class="containerProducts__blockOur">
-				<div class="blockOur__blockcash"  id="cash">
+				<div class="blockOur__blockcash" onclick="clicar('cash')">
 					<h2 class="blockOur__block--subtitle">Cash to Cash</h2>
 						<img class="blockOur__block--image" 
 							src="assets/cash.png">
 					<p class="blockOur__block--paragraph">Transfer of money from one individual to another</p>
 				</div>
-				<div class="blockOur__blockcashD" id="card">
+				<div class="blockOur__blockcashD"  onclick="clicar('card')">
 					<h2 class="blockOur__block--subtitle">Cash to Card</h2>
 					<img class="blockOur__block--image" 
 						src="assets/card.png">	
 					<p class="blockOur__block--paragraph">Transfer of money from an individual onto a card</p>				
 				</div>
-				<div class="blockOur__blockcash" id="account">
+				<div class="blockOur__blockcash" onclick="clicar('account')">
 					<h2 class="blockOur__block--subtitle">Cash to Account</h2>
 					<img class="blockOur__block--image" 
 						src="assets/account.png">
 					<p class="blockOur__block--paragraph">Transfer of money from an individual to a bank account</p>				
 				</div>
 			</div>
-			<section class="containerCash">
+			<section class="containerCash" id="cash">
 				<div class="containerCash__block">
 					<h1 class="containerCash__block--title">Cash to Cash</h1>
 					<h2 class="containerCash__block--subtitle">It is the transfer of money from one individual to another</h2>
@@ -103,7 +103,7 @@
 					<p class="containerCash__block--paragraph">Fill out the Receiver Form, and then give it to the person behind the counter. After verifying the transfer information and validation, the agent will give you the money in local currency.</p>
 				</div>
 		</section>
-		<section class="containerCard">
+		<section class="containerCard" id="card">
 			<div class="containerCard__block">
 				<h1 class="containerCard__block--title">Cash to Card</h1>
 				<h2 class="containerCard__block--subtitle">It is the transfer of money from an individual onto a card.</h2>
@@ -132,7 +132,7 @@
 				<p class="containerCard__block--paragraph">Insert your card into the slot provided for this purposes and follow the instructions. At the end of the operation, remove your card and keep it for future operations.</p>
 			</div>
 		</section>
-		<section class="containerAccount">
+		<section class="containerAccount" id="account">
 			<div class="containerAccount__block">
 				<h1 class="containerAccount__block--title">Cash to Account</h1>
 				<h2 class="containerAccount__block--subtitle"> The possibility to transfer money from your location into your bank account.</h2>
@@ -316,7 +316,7 @@
 			</div>
 		</div>
 	</footer>
-	<div class="block__desenv">	
+	<script src="js/script.js"></script>
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/products.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>		

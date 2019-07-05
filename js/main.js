@@ -104,23 +104,23 @@ $(function(){
 });
 
 
-$(function(){
-        $('#cash').click(function(){
-        $('.containerCash').css('display','flex');
-        $('.containerCard').css('display','none');
-        $('.containerAccount').css('display','none');
-    });
-        $('#card').click(function(){
-        $('.containerCard').css('display','flex');
-        $('.containerCash').css('display','none');
-        $('.containerAccount').css('display','none');
-    });
-        $('#account').click(function(){
-        $('.containerAccount').css('display','flex');
-        $('.containerCard').css('display','none');
-        $('.containerCash').css('display','none');
-    });
-});
+// $(function(){
+//         $('#cash').click(function(){
+//         $('.containerCash').css('display','flex');
+//         $('.containerCard').css('display','none');
+//         $('.containerAccount').css('display','none');
+//     });
+//         $('#card').click(function(){
+//         $('.containerCard').css('display','flex');
+//         $('.containerCash').css('display','none');
+//         $('.containerAccount').css('display','none');
+//     });
+//         $('#account').click(function(){
+//         $('.containerAccount').css('display','flex');
+//         $('.containerCard').css('display','none');
+//         $('.containerCash').css('display','none');
+//     });
+// });
 
 $(function(){
     $('.faleConosco-titulo-sair').click(function(){

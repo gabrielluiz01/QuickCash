@@ -347,13 +347,13 @@ header {
     display: flex;
     flex-direction: column;
     background-color: rgba(0,131,202,1);
-    padding: 15vh 0 15vh 5vw;
 }
 .containerProducts--title{
 	width: 50%;
 	color: #fff;
 	font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
+	padding: 0 5vw;
 }
 @media (max-width: 485px){
 	.containerProducts--title{
@@ -381,6 +381,7 @@ header {
 	color: #fff;
 	font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
+	padding: 8vh 12vw;
 }
 @media (max-width: 485px){
 	.containerProducts--titleP{
@@ -392,7 +393,7 @@ header {
 	width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 15vh 5vw 15vh 0;
+    padding: 15vh 0vw 15vh 5vw;
 }
 @media (max-width: 485px){
 	.containerProducts__blockOur{
@@ -410,7 +411,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+	justify-content: space-between;
 }
 @media (max-width: 485px){
 	.blockOur__block{
@@ -455,7 +456,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	background-color: #0083CA;	
-	padding: 15vh 0;
+	padding: 15vh 5vw;
 }
 @media (max-width:425px){
 	.simulate{
@@ -633,10 +634,9 @@ header {
 	display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15vh 0;
+    padding: 15vh 5vw;
     overflow: hidden;
     color: #fff;
-    /* background: linear-gradient(to bottom,#0083ca 0,#0083ca 50%,#0059ca 100%); */
 }
 .history-text{
 	width: 25vw;
@@ -693,9 +693,10 @@ header {
 	display: flex;
 	float: left;
 	padding: 3vh 5vw;
-	width: 53vw;
-	height: 85vh;
+	width: 45vw;
+	height: 90vh;
 	line-height: 300px;
+	left: 4vw;
   }
   .slide-block-arrowRight, .slide-block-arrowLeft {
 	position: absolute;
@@ -1614,7 +1615,9 @@ iframe{
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-}@media (max-width: 485px){
+	cursor: pointer;
+}
+@media (max-width: 485px){
 	.blockOur__blockcash{
 		width: 80%;
 	}
@@ -1633,7 +1636,9 @@ iframe{
 	justify-content: space-between;	
 	border-left: 2px solid #fff;
 	border-right: 2px solid #fff;
-}@media (max-width: 485px){
+	cursor: pointer;
+}
+@media (max-width: 485px){
 	.blockOur__blockcashD{
 		width: 80%;
 		border-right: none;
@@ -1653,9 +1658,10 @@ iframe{
 	flex-direction: row;
 	justify-content: space-around;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #F8F8F8;
+	background-color: rgb(224, 221, 221);
 	margin: 20px 0px;
 	display: none;
+	cursor: pointer;
 }
 @media (max-width: 485px){
 	.containerCash, .containerCard{
@@ -1695,7 +1701,6 @@ iframe{
 	}
 }
 .containerCash__block--image, .containerAccount__block--image, .containerCard__block--image{
-	opacity: 0.8;
 	width: 350px;
 }
 @media (max-width: 485px){
@@ -1708,7 +1713,7 @@ iframe{
 	flex-direction: row;
 	justify-content: flex-start;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #F8F8F8;
+	background-color: rgb(238, 235, 235);
 	margin: 20px 0px;
 	padding-left: 20px;	
 	display: none;
@@ -1791,6 +1796,7 @@ iframe{
 }
 .footer__block--image{
 	align-self: flex-start;
+	margin-bottom: 5vh;
 }
 @media (max-width: 320px){
 	.footer__block--image{
