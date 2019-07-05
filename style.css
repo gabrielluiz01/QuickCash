@@ -353,7 +353,7 @@ header {
 	color: #fff;
 	font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
-	padding: 0 5vw;
+	padding: 10vh 8vw;
 }
 @media (max-width: 485px){
 	.containerProducts--title{
@@ -1130,7 +1130,7 @@ iframe{
 	color: #fff;
 	font-size: 43px;
 	font-family: 'Montserrat', sans-serif;
-	margin: 30px 0px;
+	margin: 30px 20px;
 }
 @media (max-width: 425px){
 	.containerAbout__blockImages--title{
