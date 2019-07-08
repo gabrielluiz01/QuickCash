@@ -46,37 +46,36 @@
 		<section class="containerProducts">
 			<h1 class="containerProducts--titleP">Our Products</h1>
 			<div class="containerProducts__blockOur">
-				<div class="blockOur__blockcash"  id="cash">
+				<div class="blockOur__blockcash"  onclick="clicar('cash')">
 					<h2 class="blockOur__block--subtitle">Cash to Cash</h2>
 						<img class="blockOur__block--image" 
 							src="assets/cash.png">
 					<p class="blockOur__block--paragraph">Transfer of money from one individual to another</p>
 				</div>
-				<div class="blockOur__blockcashD" id="card">
+				<div class="blockOur__blockcashD" onclick="clicar('card')">
 					<h2 class="blockOur__block--subtitle">Cash to Card</h2>
 					<img class="blockOur__block--image" 
 						src="assets/card.png">	
 					<p class="blockOur__block--paragraph">Transfer of money from an individual onto a card</p>				
 				</div>
-				<div class="blockOur__blockcash" id="account">
+				<div class="blockOur__blockcash" onclick="clicar('account')">
 					<h2 class="blockOur__block--subtitle">Cash to Account</h2>
 					<img class="blockOur__block--image" 
 						src="assets/account.png">
 					<p class="blockOur__block--paragraph">Transfer of money from an individual to a bank account</p>				
 				</div>
 			</div>
-			<section class="containerCash">
+			<section class="containerCash" id="cash">
 				<div class="containerCash__block">
-					<h1 class="containerCash__block--title">Cash to Cash</h1>
+					<h1 class="containerCash__block--title">Cash à Cash</h1>
 					<h2 class="containerCash__block--subtitle">It is the transfer of money from one individual to another</h2>
-					<p class="containerCash__block--paragraph">This is the classic pattern through which money can be transferred from one individual to another in just a few minutes.</p>
-					<p class="containerCash__block--paragraph">Generally, funds are paid in cash to the beneficiary and in the local currency of the receiving country.</p>
-					<p class="containerCash__block--paragraph">If desired, the sender can be notified by SMS when the funds are received by the beneficiary</p>
+					<p class="containerCash__block--paragraph">C'est le transfert d'argent d'une personne physique à une autre personne physique. C'est le schéma classique de transfert qui permet de transférer en quelques minutes seulement de l'argent d'une personne physique à une autre personne physique. En règle générale, les fonds sont remis en espèces au bénéficiaire et dans la monnaie locale du pays de réception. S'il le souhaite, l'expéditeur sera informé par un SMS lorsque les fonds seront remis à son bénéficiaire.
+					</p>
 					<img class="containerCash__block--image"
 							src="assets/cash.png">	
 				</div>
 				<div class="containerCash__block">
-					<h2 class="containerCash__block--subtitle"> How to make Cash to Cash transfer?</h2>
+					<h2 class="containerCash__block--subtitle">Comment effectuer un transfert Cash à Cash?</h2>
 					<p class="containerCash__block--paragraph"><b>ÉTAPE 1</b></p>
 					<p class="containerCash__block--paragraph">Trouvez I'agent QuickCash le plus proche de vous </p>
 					<p class="containerCash__block--paragraph">ÉTAPE 2</p>
@@ -90,21 +89,21 @@
 					-numéro de transfert unique<br>- mot de passe que vous avez inscrit sur le formulaire d'envoi<br>- montant qu'il doit percevoir</p>
 				</div>
 				<div class="containerCash__block">
-					<h2 class="containerCash__block--subtitle">How to receive money from a Cash to Cash</h2>
-					<p class="containerCash__block--paragraph">STEP 1</p>
-					<p class="containerCash__block--paragraph">Ask the sender to communicate :</p>
+					<h2 class="containerCash__block--subtitle">Comment recevoir de l'argent d'un transfert Cash à Cash</h2>
+					<p class="containerCash__block--paragraph">ÉTAPE 1</p>
+					<p class="containerCash__block--paragraph">Demandez à l'expéditeur de vous communiquer:</p>
 					<ul>
-						<li class="containerCash__block--paragraph">-The control number</li>
-						<li class="containerCash__block--paragraph">-The password</li>
-						<li class="containerCash__block--paragraph">-The amount to be collected</li>
+						<li class="containerCash__block--paragraph">- Numéro de transfert</li>
+						<li class="containerCash__block--paragraph">- Mot de passe</li>
+						<li class="containerCash__block--paragraph">- Montant à percevoir</li>
 					</ul>
-					<p class="containerCash__block--paragraph">STEP 2</p>
-					<p class="containerCash__block--paragraph">Go to a QuickCash agency with a valid identity card. Find a QuickCash agent</p>
-					<p class="containerCash__block--paragraph">STEP 3</p>
-					<p class="containerCash__block--paragraph">Fill out the Receiver Form, and then give it to the person behind the counter. After verifying the transfer information and validation, the agent will give you the money in local currency.</p>
+					<p class="containerCash__block--paragraph">ÉTAPE 2</p>
+					<p class="containerCash__block--paragraph">Rendez-vous dans un point de vente QuickCash avez une pièce d'identité en cours de validité. Trouvez un agent QuickCash.</p>
+					<p class="containerCash__block--paragraph">ÉTAPE 3</p>
+					<p class="containerCash__block--paragraph">Remplissez le formulaire de réception, puis remettez-le au guichet. Après vérification des informations du transfert et sa validation par l'opérateur, l'argent vous sera remis, dans la devise locale.</p>
 				</div>
 		</section>
-		<section class="containerCard">
+		<section class="containerCard" id="card">
 			<div class="containerCard__block">
 				<h1 class="containerCard__block--title">Cash to Card</h1>
 				<h2 class="containerCard__block--subtitle">It is the transfer of money from an individual onto a card.</h2>
@@ -133,30 +132,32 @@
 				<p class="containerCard__block--paragraph">Insert your card into the slot provided for this purposes and follow the instructions. At the end of the operation, remove your card and keep it for future operations.</p>
 			</div>
 		</section>
-		<section class="containerAccount">
+		<section class="containerAccount" id="account">
 			<div class="containerAccount__block">
 				<h1 class="containerAccount__block--title">Cash to Account</h1>
 				<h2 class="containerAccount__block--subtitle"> The possibility to transfer money from your location into your bank account.</h2>
-				<p class="containerAccount__block--paragraph">The search for a stable financial situation often leads to the migration of people around the world.</p>
-				<p class="containerAccount__block--paragraph">Repatriation of the savings done through many years of hard work to her or his country of origin is often a headache.</p>
-				<p class="containerAccount__block--paragraph">Tailored to the needs of migrants, Cash to Account allows you to transfer money directly to your bank account in your country of origin.</p>
-				<p class="containerAccount__block--paragraph">And the transferred funds will be credited to the beneficiary’s bank account within a short time framework. </p>
-				<p class="containerAccount__block--paragraph">It thus permits the migrants to safely and discreetly have savings for their projects in their country of origin.</p>
+				<p class="containerAccount__block--paragraph">"La possibilité depuis votre position de transférer de l’argent sur votre compte bancaire.
+					La recherche d'une situation financière stable entraine souvent des mouvements migratoires des populations à travers le monde.
+					Le rapatriement vers son pays d’origine, de l’épargne acquise au prix de nombreuses années de durs labeurs est souvent un casse-tête.
+					Conçu sur mesure pour les migrants, le cash à compte leur permet de transférer directement de l’argent vers leur comptes bancaires domiciliés dans leur pays d’origine.
+					Ainsi les fonds transférés seront portés au crédit du compte bancaire du bénéficiaire dans un rapide délai.
+					Il permet donc aux migrants de se constituer au pays, une épargne en toute sécurité et discrétion pour la réalisation de leurs projets.
+					"</p>
 				<img class="containerAccount__block--image" 
 					src="assets/account.png">
 			</div>
 			<div class="containerAccount__block">
-				<h2 class="containerAccount__block--subtitle"> How to carry out a Cash to Account transfer ?</h2>
-				<p class="containerAccount__block--paragraph"><b>STEP 1</b></p>
-				<p class="containerAccount__block--paragraph"> Find the nearest QuickCash agency to you.</p>
-				<p class="containerAccount__block--paragraph">STEP 2</p>
-				<p class="containerAccount__block--paragraph">Visit the QuickCash agency with a valid identity card.</p>
-				<p class="containerAccount__block--paragraph">STEP 3</p>
-				<p class="containerAccount__block--paragraph"> Fill out the Form (communicate the account number and the name of the receiving bank) and then submit it to the person behind the counter along with the money to be transferred and the transfer fees </p>
-				<p class="containerAccount__block--paragraph">STEP 4</p>
-				<p class="containerAccount__block--paragraph">After entering all information and validating transaction, the operator will issue a receipt on which will appear a control number of 12 digits. This slip is to be kept carefully for future claim. </p>
-				<p class="containerAccount__block--paragraph">STEP 5</p>
-				<p class="containerAccount__block--paragraph">The money is credited to your account by your manager in maximum 48 hours.</p>
+				<h2 class="containerAccount__block--subtitle">Comment effectuer un transfert Cash à Cash?</h2>
+				<p class="containerAccount__block--paragraph">ÉTAPE 1</p>
+				<p class="containerAccount__block--paragraph">Trouvez l'agent QuickCash le plus prouche de vous.</p>
+				<p class="containerAccount__block--paragraph">ÉTAPE 2</p>
+				<p class="containerAccount__block--paragraph">Rendez-vous dans un point de vente QuickCash, avec une pièce d'identité en cours de validité.</p>
+				<p class="containerAccount__block--paragraph">ÉTAPE 3</p>
+				<p class="containerAccount__block--paragraph">Remplissez le formulaire (communiquez le numéro du compte et le nom de la banque de domiciliation), puis remettez-le au guichet, ainsi que le montant á envoyer et lef frais du transfert</p>
+				<p class="containerAccount__block--paragraph">ÉTAPE 4</p>
+				<p class="containerAccount__block--paragraph">Après avoir saisi les informations du transfert et procédé à sa validation l'opérateur vous délivrera un reçu sur lequel figurera un numéro de transfert comportant 12 chiffres. Conservez-le précieusement pour tout réclamation.</p>
+				<p class="containerAccount__block--paragraph">ÉTAPE 5</p>
+				<p class="containerAccount__block--paragraph">L'argent est crédité sur votre compte par votre Gestionnaire dans un délai maximum de 48h.<br>N.B: Pour le retrait des fonds transférés sur le compte bancaire via QuickCash, prière vous référer aux conditions de la banque de domiciliation du compte.</p>
 			</div>
 		</section>
 			<div class="containerProducts__blockTransfer">
@@ -296,8 +297,22 @@
 				<span class="blockAdress__block">
 					<img class="blockAdress__block--image" 
 						src="assets/emailicon.svg">
-					<p class="blockAdress__block--paragraph">Email: infos@quickcashci.com</p>					
+					<p class="blockAdress__block--paragraph">Email: contacts@quickcashci.com</p>					
 				</span>
+				<span>
+						<a href="https://www.linkedin.com/company/quickcashci-finance/" target="_blank">
+							<img class="blockAdress__block--image" 
+							src="assets/linkedin.png" alt="linkedin">
+						</a>
+						<a href="https://twitter.com/QuickCash_2010" target="_blank">
+							<img class="blockAdress__block--image" 
+							src="assets/twitter.png" alt="twitter">
+						</a>
+						<a href="https://www.facebook.com/QuickCashci/" target="_blank">
+							<img class="blockAdress__block--image" 
+								src="assets/facebook.png" alt="facebook">
+						</a>		
+					</span>
 				<span class="block__desenv">
 					<p class="block__desenv--paragraph opacity">Copyright&copy;2019 QuickCash - All Rights Reserved</p>
 					<p class="block__desenv--paragraph">Developed by Vai na Web</p>

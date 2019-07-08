@@ -140,3 +140,10 @@ $(function(){
     });   
 });
 
+
+
+function paises(){
+    $('#br').click(function(){
+        $('#country').css('display', 'none')
+    });
+}

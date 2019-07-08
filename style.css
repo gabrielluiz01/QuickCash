@@ -366,6 +366,7 @@ header {
 		font-size: 30px;
 		font-family: 'Montserrat', sans-serif;
 		display: none;
+		padding-top: 15vh;
 }
 @media (max-width: 485px){
 	.containerProducts--titleresp{
@@ -393,7 +394,7 @@ header {
 	width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 15vh 0vw 15vh 5vw;
+    padding: 15vh 5vw 15vh 5vw;
 }
 @media (max-width: 485px){
 	.containerProducts__blockOur{
@@ -969,7 +970,7 @@ iframe{
 }
 .containerSocial__blockNews{
 	width: 30%;
-    background-color: #FFDFDF;
+    background-color: #FFF3F2;
     display: flex;
     border-radius: 20px;
     flex-direction: column;
