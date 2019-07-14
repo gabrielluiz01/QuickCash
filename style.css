@@ -353,7 +353,7 @@ header {
 	color: #fff;
 	font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
-	padding: 10vh 8vw;
+	padding: 10vh 5vw;
 }
 @media (max-width: 485px){
 	.containerProducts--title{
@@ -910,6 +910,7 @@ iframe{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 28px;
 	margin-top: 20px;
+	padding: 0 1vw;
 }
 @media (max-width: 425px){
 	.containerSocial__block--title{
@@ -942,7 +943,6 @@ iframe{
 }
 .containerSocial__blockImpact--image{
 	width: 200px;
-	height: 200px;
 	padding: 20px 20px;
 }
 @media (max-width: 768px){
@@ -1203,7 +1203,7 @@ iframe{
 	color: #fff;
 	font-size: 40px;
 	align-self: flex-start;
-	margin: 3vh 2.5	vw;	
+	padding: 1rem;	
 }
 @media (max-width: 768px){
 	.containerAbout__blockValeurs--title{
@@ -1362,7 +1362,7 @@ iframe{
 .blockValeurs--imageR{
 	max-width: 230px;
 	position: absolute;
-	right: 24vw;
+	right: 22vw;
 	bottom: 2vh;
 }
 @media (max-width: 425px){
@@ -1573,6 +1573,7 @@ iframe{
 .containerBoardNews__block--title{
 	font-size: 30px;
 	color: #ff0000;
+	padding: 1rem;
 }
 @media (max-width: 425px){
 	.containerBoardNews__block--title{
