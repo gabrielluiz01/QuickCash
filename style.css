@@ -447,7 +447,7 @@ header {
 	}
 }
 .blockOur__block--paragraph{
-	width: 100%;
+	width: 90%;
 	color: #fff;
 	font-size: 18px;
 	font-family: 'Muli', sans-serif;
@@ -943,6 +943,7 @@ iframe{
 }
 .containerSocial__blockImpact--image{
 	width: 200px;
+	height: 200px;
 	padding: 20px 20px;
 }
 @media (max-width: 768px){
@@ -1875,10 +1876,10 @@ iframe{
 	width: 90%;
 	font-family: 'Montserrat Alternates';
 	font-size: 15px;
-	opacity: 0.6;
+	text-align: center;
 }
 .opacity{
-	color: rgba(0,0,0,.40);
+	color: rgb(0, 0, 0);
 	font-weight: 600;
 }
 @media (max-width: 425px){
